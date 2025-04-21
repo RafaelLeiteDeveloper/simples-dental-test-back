@@ -1,0 +1,719 @@
+{
+	"info": {
+		"_postman_id": "cb6b0e79-f513-4a2b-b40c-15d5c57e088a",
+		"name": "collection_test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27290769"
+	},
+	"item": [
+		{
+			"name": "productGetbyidV1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX0FETUlOIiwiUk9MRV9VU0VSIl0sImlzcyI6ImFwaS1hdXRoIiwiaWQiOjEwLCJleHAiOjE3NDUyMDk0NzMsImlhdCI6MTc0NTEyMzA3MywiZW1haWwiOiJqb2huLmRvZTIyQGV4YW1wbGUuY29tIn0.qIf1hpRxWwTKmHbnAwmz86AXPlTuRvfMBjigZJGnzQar5ZBOYzqJ6pu0g4gWw2mNLWIN53aQ2BthChUcU1lz-gcMGaAGYuHmsmpi17_t-46Ywk675R_lZGUYGlplc0wRcJawNpXdGxZqhMS8uao3htQZrI1X-S1fQzvXfQBidwLY2VbuBuyqhuqUqYp1oy4y7kJ2lL5YRwziHdGfd1KhE_uLJIlVJDeWl8_wu50rZ8HzNn7M-pVswpEo6lXn64WiuRLJ5-5RXEW5w2pSib9nVQ-DHGmzTaOjJaw95HbSOgQzo2Uw9QuqOEEdUVeuheuJ6By2iCF1B4mzOThmO4hJdw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/products/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "productGetbyidV2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX0FETUlOIiwiUk9MRV9VU0VSIl0sImlzcyI6ImFwaS1hdXRoIiwiaWQiOjEwLCJleHAiOjE3NDUyMDk0NzMsImlhdCI6MTc0NTEyMzA3MywiZW1haWwiOiJqb2huLmRvZTIyQGV4YW1wbGUuY29tIn0.qIf1hpRxWwTKmHbnAwmz86AXPlTuRvfMBjigZJGnzQar5ZBOYzqJ6pu0g4gWw2mNLWIN53aQ2BthChUcU1lz-gcMGaAGYuHmsmpi17_t-46Ywk675R_lZGUYGlplc0wRcJawNpXdGxZqhMS8uao3htQZrI1X-S1fQzvXfQBidwLY2VbuBuyqhuqUqYp1oy4y7kJ2lL5YRwziHdGfd1KhE_uLJIlVJDeWl8_wu50rZ8HzNn7M-pVswpEo6lXn64WiuRLJ5-5RXEW5w2pSib9nVQ-DHGmzTaOjJaw95HbSOgQzo2Uw9QuqOEEdUVeuheuJ6By2iCF1B4mzOThmO4hJdw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v2/products/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v2",
+						"products",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "productSaveV1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX0FETUlOIiwiUk9MRV9VU0VSIl0sImlzcyI6ImFwaS1hdXRoIiwiaWQiOjEwLCJleHAiOjE3NDUyMDk0NzMsImlhdCI6MTc0NTEyMzA3MywiZW1haWwiOiJqb2huLmRvZTIyQGV4YW1wbGUuY29tIn0.qIf1hpRxWwTKmHbnAwmz86AXPlTuRvfMBjigZJGnzQar5ZBOYzqJ6pu0g4gWw2mNLWIN53aQ2BthChUcU1lz-gcMGaAGYuHmsmpi17_t-46Ywk675R_lZGUYGlplc0wRcJawNpXdGxZqhMS8uao3htQZrI1X-S1fQzvXfQBidwLY2VbuBuyqhuqUqYp1oy4y7kJ2lL5YRwziHdGfd1KhE_uLJIlVJDeWl8_wu50rZ8HzNn7M-pVswpEo6lXn64WiuRLJ5-5RXEW5w2pSib9nVQ-DHGmzTaOjJaw95HbSOgQzo2Uw9QuqOEEdUVeuheuJ6By2iCF1B4mzOThmO4hJdw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"123\",\r\n    \"description\": \"Notebook com 16GB RAM\",\r\n    \"price\": 3999.99,\r\n    \"status\": true,\r\n    \"code\": \"NB-D-16GB\",\r\n    \"categoryId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "productSaveV2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX0FETUlOIiwiUk9MRV9VU0VSIl0sImlzcyI6ImFwaS1hdXRoIiwiaWQiOjEwLCJleHAiOjE3NDUyMDk0NzMsImlhdCI6MTc0NTEyMzA3MywiZW1haWwiOiJqb2huLmRvZTIyQGV4YW1wbGUuY29tIn0.qIf1hpRxWwTKmHbnAwmz86AXPlTuRvfMBjigZJGnzQar5ZBOYzqJ6pu0g4gWw2mNLWIN53aQ2BthChUcU1lz-gcMGaAGYuHmsmpi17_t-46Ywk675R_lZGUYGlplc0wRcJawNpXdGxZqhMS8uao3htQZrI1X-S1fQzvXfQBidwLY2VbuBuyqhuqUqYp1oy4y7kJ2lL5YRwziHdGfd1KhE_uLJIlVJDeWl8_wu50rZ8HzNn7M-pVswpEo6lXn64WiuRLJ5-5RXEW5w2pSib9nVQ-DHGmzTaOjJaw95HbSOgQzo2Uw9QuqOEEdUVeuheuJ6By2iCF1B4mzOThmO4hJdw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"1234\",\r\n    \"description\": \"Notebook com 16GB RAM\",\r\n    \"price\": 3999.99,\r\n    \"status\": true,\r\n    \"code\": 1,\r\n    \"categoryId\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v2/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v2",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "productUpdateV1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX0FETUlOIiwiUk9MRV9VU0VSIl0sImlzcyI6ImFwaS1hdXRoIiwiaWQiOjEwLCJleHAiOjE3NDUyMDk0NzMsImlhdCI6MTc0NTEyMzA3MywiZW1haWwiOiJqb2huLmRvZTIyQGV4YW1wbGUuY29tIn0.qIf1hpRxWwTKmHbnAwmz86AXPlTuRvfMBjigZJGnzQar5ZBOYzqJ6pu0g4gWw2mNLWIN53aQ2BthChUcU1lz-gcMGaAGYuHmsmpi17_t-46Ywk675R_lZGUYGlplc0wRcJawNpXdGxZqhMS8uao3htQZrI1X-S1fQzvXfQBidwLY2VbuBuyqhuqUqYp1oy4y7kJ2lL5YRwziHdGfd1KhE_uLJIlVJDeWl8_wu50rZ8HzNn7M-pVswpEo6lXn64WiuRLJ5-5RXEW5w2pSib9nVQ-DHGmzTaOjJaw95HbSOgQzo2Uw9QuqOEEdUVeuheuJ6By2iCF1B4mzOThmO4hJdw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"teste Atualizado1\",\r\n    \"description\": \"Nova descrição\",\r\n    \"price\": 4199.99,\r\n    \"status\": true,\r\n    \"code\": \"NB-D-19GB\",\r\n    \"categoryId\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/products/12",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"products",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "productUpdateV2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX0FETUlOIiwiUk9MRV9VU0VSIl0sImlzcyI6ImFwaS1hdXRoIiwiaWQiOjEwLCJleHAiOjE3NDUyMDk0NzMsImlhdCI6MTc0NTEyMzA3MywiZW1haWwiOiJqb2huLmRvZTIyQGV4YW1wbGUuY29tIn0.qIf1hpRxWwTKmHbnAwmz86AXPlTuRvfMBjigZJGnzQar5ZBOYzqJ6pu0g4gWw2mNLWIN53aQ2BthChUcU1lz-gcMGaAGYuHmsmpi17_t-46Ywk675R_lZGUYGlplc0wRcJawNpXdGxZqhMS8uao3htQZrI1X-S1fQzvXfQBidwLY2VbuBuyqhuqUqYp1oy4y7kJ2lL5YRwziHdGfd1KhE_uLJIlVJDeWl8_wu50rZ8HzNn7M-pVswpEo6lXn64WiuRLJ5-5RXEW5w2pSib9nVQ-DHGmzTaOjJaw95HbSOgQzo2Uw9QuqOEEdUVeuheuJ6By2iCF1B4mzOThmO4hJdw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"teste Atualizado3\",\r\n    \"description\": \"Nova descrição\",\r\n    \"price\": 4199.99,\r\n    \"status\": true,\r\n    \"code\": 5,\r\n    \"categoryId\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v2/products/12",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v2",
+						"products",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "productGetAlllV1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX0FETUlOIiwiUk9MRV9VU0VSIl0sImlzcyI6ImFwaS1hdXRoIiwiaWQiOjEwLCJleHAiOjE3NDUyMDk0NzMsImlhdCI6MTc0NTEyMzA3MywiZW1haWwiOiJqb2huLmRvZTIyQGV4YW1wbGUuY29tIn0.qIf1hpRxWwTKmHbnAwmz86AXPlTuRvfMBjigZJGnzQar5ZBOYzqJ6pu0g4gWw2mNLWIN53aQ2BthChUcU1lz-gcMGaAGYuHmsmpi17_t-46Ywk675R_lZGUYGlplc0wRcJawNpXdGxZqhMS8uao3htQZrI1X-S1fQzvXfQBidwLY2VbuBuyqhuqUqYp1oy4y7kJ2lL5YRwziHdGfd1KhE_uLJIlVJDeWl8_wu50rZ8HzNn7M-pVswpEo6lXn64WiuRLJ5-5RXEW5w2pSib9nVQ-DHGmzTaOjJaw95HbSOgQzo2Uw9QuqOEEdUVeuheuJ6By2iCF1B4mzOThmO4hJdw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/products?page=0&size=5&sort=name,asc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"products"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "5"
+						},
+						{
+							"key": "sort",
+							"value": "name,asc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "productGetAlllV2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX0FETUlOIiwiUk9MRV9VU0VSIl0sImlzcyI6ImFwaS1hdXRoIiwiaWQiOjEwLCJleHAiOjE3NDUyMDk0NzMsImlhdCI6MTc0NTEyMzA3MywiZW1haWwiOiJqb2huLmRvZTIyQGV4YW1wbGUuY29tIn0.qIf1hpRxWwTKmHbnAwmz86AXPlTuRvfMBjigZJGnzQar5ZBOYzqJ6pu0g4gWw2mNLWIN53aQ2BthChUcU1lz-gcMGaAGYuHmsmpi17_t-46Ywk675R_lZGUYGlplc0wRcJawNpXdGxZqhMS8uao3htQZrI1X-S1fQzvXfQBidwLY2VbuBuyqhuqUqYp1oy4y7kJ2lL5YRwziHdGfd1KhE_uLJIlVJDeWl8_wu50rZ8HzNn7M-pVswpEo6lXn64WiuRLJ5-5RXEW5w2pSib9nVQ-DHGmzTaOjJaw95HbSOgQzo2Uw9QuqOEEdUVeuheuJ6By2iCF1B4mzOThmO4hJdw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v2/products?page=0&size=11&sort=name,asc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v2",
+						"products"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "11"
+						},
+						{
+							"key": "sort",
+							"value": "name,asc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllCategory",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX0FETUlOIiwiUk9MRV9VU0VSIl0sImlzcyI6ImFwaS1hdXRoIiwiaWQiOjEwLCJleHAiOjE3NDUyMDk0NzMsImlhdCI6MTc0NTEyMzA3MywiZW1haWwiOiJqb2huLmRvZTIyQGV4YW1wbGUuY29tIn0.qIf1hpRxWwTKmHbnAwmz86AXPlTuRvfMBjigZJGnzQar5ZBOYzqJ6pu0g4gWw2mNLWIN53aQ2BthChUcU1lz-gcMGaAGYuHmsmpi17_t-46Ywk675R_lZGUYGlplc0wRcJawNpXdGxZqhMS8uao3htQZrI1X-S1fQzvXfQBidwLY2VbuBuyqhuqUqYp1oy4y7kJ2lL5YRwziHdGfd1KhE_uLJIlVJDeWl8_wu50rZ8HzNn7M-pVswpEo6lXn64WiuRLJ5-5RXEW5w2pSib9nVQ-DHGmzTaOjJaw95HbSOgQzo2Uw9QuqOEEdUVeuheuJ6By2iCF1B4mzOThmO4hJdw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/categories?page=0&size=10&sort=name,asc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"categories"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "10"
+						},
+						{
+							"key": "sort",
+							"value": "name,asc"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categoryGetById",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX0FETUlOIiwiUk9MRV9VU0VSIl0sImlzcyI6ImFwaS1hdXRoIiwiaWQiOjEwLCJleHAiOjE3NDUyMDk0NzMsImlhdCI6MTc0NTEyMzA3MywiZW1haWwiOiJqb2huLmRvZTIyQGV4YW1wbGUuY29tIn0.qIf1hpRxWwTKmHbnAwmz86AXPlTuRvfMBjigZJGnzQar5ZBOYzqJ6pu0g4gWw2mNLWIN53aQ2BthChUcU1lz-gcMGaAGYuHmsmpi17_t-46Ywk675R_lZGUYGlplc0wRcJawNpXdGxZqhMS8uao3htQZrI1X-S1fQzvXfQBidwLY2VbuBuyqhuqUqYp1oy4y7kJ2lL5YRwziHdGfd1KhE_uLJIlVJDeWl8_wu50rZ8HzNn7M-pVswpEo6lXn64WiuRLJ5-5RXEW5w2pSib9nVQ-DHGmzTaOjJaw95HbSOgQzo2Uw9QuqOEEdUVeuheuJ6By2iCF1B4mzOThmO4hJdw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/categories/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"categories",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categoryCreate",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"TESTE\",\r\n    \"description\": \"Produtos de tecnologia e eletrônicos\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categoryUpdate",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Eletrônicos Atualizado teste2\",\r\n    \"description\": \"Nova descrição\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/categories/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"categories",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categoryDelete",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/categories/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"categories",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "productDeletev1",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/products/12",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"products",
+						"12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "productDeletev2",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v2/products/13",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v2",
+						"products",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"contato@simplesdental.com\",\n    \"password\": \"KMbT%5wT*R!46i@@YHqx\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX0FETUlOIiwiUk9MRV9VU0VSIl0sImlzcyI6ImFwaS1hdXRoIiwiaWQiOjEwLCJleHAiOjE3NDUyMDk0NzMsImlhdCI6MTc0NTEyMzA3MywiZW1haWwiOiJqb2huLmRvZTIyQGV4YW1wbGUuY29tIn0.qIf1hpRxWwTKmHbnAwmz86AXPlTuRvfMBjigZJGnzQar5ZBOYzqJ6pu0g4gWw2mNLWIN53aQ2BthChUcU1lz-gcMGaAGYuHmsmpi17_t-46Ywk675R_lZGUYGlplc0wRcJawNpXdGxZqhMS8uao3htQZrI1X-S1fQzvXfQBidwLY2VbuBuyqhuqUqYp1oy4y7kJ2lL5YRwziHdGfd1KhE_uLJIlVJDeWl8_wu50rZ8HzNn7M-pVswpEo6lXn64WiuRLJ5-5RXEW5w2pSib9nVQ-DHGmzTaOjJaw95HbSOgQzo2Uw9QuqOEEdUVeuheuJ6By2iCF1B4mzOThmO4hJdw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Pyptes\",\n  \"email\": \"ioepeoe@example.com\",\n  \"password\": \"StrongPassword123\",\n  \"role\": \"USER\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdatePassword",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX0FETUlOIiwiUk9MRV9VU0VSIl0sImlzcyI6ImFwaS1hdXRoIiwiaWQiOjEwLCJleHAiOjE3NDUyMDc5NTksImlhdCI6MTc0NTEyMTU1OSwiZW1haWwiOiJqb2huLmRvZTIyQGV4YW1wbGUuY29tIn0.hFbZnx5e4_FVYaHwmNr_ag4GocRBv4yiS_Fh5YHzeNtHd2LxnE54BJjUVdWbkmi8Q5szR0LYYzz_VNNHnYtpOI6xb1Z12ERDaprMNAKsLVMJMuEtoy9TugXodBKQ2KZfimoXRgMuFX7hJuUuCFCeTDRYncKiZULJqdx-LlmqposNssQhCB0r-As2xKAb8nvJ2DkJWmPfQ3GG-IKryNoxwV7SjgsD3rBC2lfFFrxcwronokLFfJupu5DlkEpINoOMpkALOFN1ip0POJcao4lb994qW8_gxKLXOXMOl5mxTP6EFyqFhnuduqZvrUbZxbHk2ZIUjx8vWEMI0991mQRQng",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"password\": \"Test\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/users/password",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"users",
+						"password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Context",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiJ9.eyJyb2xlcyI6WyJST0xFX0FETUlOIiwiUk9MRV9VU0VSIl0sImlzcyI6ImFwaS1hdXRoIiwiaWQiOjEwLCJleHAiOjE3NDUyMDc5NTksImlhdCI6MTc0NTEyMTU1OSwiZW1haWwiOiJqb2huLmRvZTIyQGV4YW1wbGUuY29tIn0.hFbZnx5e4_FVYaHwmNr_ag4GocRBv4yiS_Fh5YHzeNtHd2LxnE54BJjUVdWbkmi8Q5szR0LYYzz_VNNHnYtpOI6xb1Z12ERDaprMNAKsLVMJMuEtoy9TugXodBKQ2KZfimoXRgMuFX7hJuUuCFCeTDRYncKiZULJqdx-LlmqposNssQhCB0r-As2xKAb8nvJ2DkJWmPfQ3GG-IKryNoxwV7SjgsD3rBC2lfFFrxcwronokLFfJupu5DlkEpINoOMpkALOFN1ip0POJcao4lb994qW8_gxKLXOXMOl5mxTP6EFyqFhnuduqZvrUbZxbHk2ZIUjx8vWEMI0991mQRQng",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/auth/context",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"context"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
