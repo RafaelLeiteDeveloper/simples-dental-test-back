@@ -8,6 +8,7 @@ import java.io.Serializable;
 @Data
 public class UserContextOutput implements Serializable {
     private Long id;
+    private String name;
     private String email;
     private Role role;
 }

@@ -6,10 +6,11 @@ import java.math.BigDecimal;
 
 @Data
 public class ProductResponseV2 {
+    private Long id;
     private String name;
     private String description;
     private BigDecimal price;
     private Boolean status;
-    private Integer code;
+    private String code;
     private CategoryResponse category;
 }

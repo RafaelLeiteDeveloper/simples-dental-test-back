@@ -27,20 +27,9 @@ public interface ProductMapper {
 
     ProductOutput toOutput(Product product);
 
-    @Mapping(source = "code", target = "code", qualifiedByName = "stringToInt")
     ProductResponseV2 toResponseV2(ProductOutput output);
 
-    @Mapping(source = "code", target = "code", qualifiedByName = "stringToInt")
     List<ProductResponseV2> toResponseV2List(List<ProductOutput> outputs);
-
-    @Named("stringToInt")
-    default Integer stringToInt(String code) {
-        try {
-            return code != null ? Integer.parseInt(code) : null;
-        } catch (NumberFormatException e) {
-            return null;
-        }
-    }
 
     @Named("mapCategory")
     default Category mapCategory(Long categoryId) {

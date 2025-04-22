@@ -4,12 +4,12 @@ import com.simplesdental.product.domain.model.User;
 import com.simplesdental.product.infrastructure.dto.UserContextOutput;
 import com.simplesdental.product.infrastructure.dto.UserLoginOutput;
 import com.simplesdental.product.infrastructure.dto.UserOutput;
-import com.simplesdental.product.infrastructure.dto.request.UserContextRequest;
 import com.simplesdental.product.infrastructure.dto.request.UserRegisterRequest;
 import com.simplesdental.product.infrastructure.dto.response.UserContextResponse;
 import com.simplesdental.product.infrastructure.dto.response.UserLoginResponse;
 import com.simplesdental.product.infrastructure.dto.response.UserRegisterResponse;
 import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
 
 @Mapper(componentModel = "spring")
 public interface UserMapper {
@@ -18,6 +18,7 @@ public interface UserMapper {
     
     UserOutput toOutput(User savedUser);
 
+    @Mapping(source = "name", target = "name")
     UserRegisterResponse toResponse(UserOutput registerRequest);
 
     UserContextOutput toContextOutput(User user);
