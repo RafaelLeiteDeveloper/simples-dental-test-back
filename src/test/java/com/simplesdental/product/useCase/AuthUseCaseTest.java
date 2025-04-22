@@ -112,7 +112,7 @@ class AuthUseCaseTest {
         when(encoder.encode(rawPassword)).thenReturn(encodedPassword);
 
         // Act
-        authUseCase.updatePasswordById(token, request);
+        authUseCase.updatePasswordById(1L, request);
 
         // Assert
         verify(userRepository).save(user);

@@ -76,7 +76,7 @@ public class AuthController {
             @RequestHeader("Authorization") String token,
             @Valid @RequestBody PasswordUpdateRequest passwordUpdateRequest
     ) {
-        authUseCase.updatePasswordById(token, passwordUpdateRequest);
+        authUseCase.updatePasswordById(jwtAuthentication.getUserIdFromJwt(token), passwordUpdateRequest);
         return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
     }
 

@@ -9,7 +9,7 @@ import com.simplesdental.product.infrastructure.dto.request.UserRegisterRequest;
 
 public interface ManageUserUseCase {
     UserOutput createUser(UserRegisterRequest registerRequest);
-    void updatePasswordById(String token, PasswordUpdateRequest passwordUpdateRequest);
+    void updatePasswordById(Long id, PasswordUpdateRequest passwordUpdateRequest);
     UserContextOutput getUserById(Long id);
     UserLoginOutput getTokenByLogin(UserLoginRequest userLoginRequest);
 }

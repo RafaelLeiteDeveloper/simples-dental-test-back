@@ -53,8 +53,7 @@ public class AuthUseCase implements ManageUserUseCase {
 
     @Override
     @CacheEvict(value = "userContext", key = "#id")
-    public void updatePasswordById(String token, PasswordUpdateRequest passwordUpdateRequest) {
-        Long id = jwtAuthentication.getUserIdFromJwt(token);
+    public void updatePasswordById(Long id, PasswordUpdateRequest passwordUpdateRequest) {
         log.info("Get user with id: {}", id);
         User user = userRepository.getByIdOrElseThrow(id);
         log.info("Updating password for user id: {}", id);
