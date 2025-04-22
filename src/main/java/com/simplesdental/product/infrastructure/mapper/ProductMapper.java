@@ -27,6 +27,7 @@ public interface ProductMapper {
 
     ProductOutput toOutput(Product product);
 
+    @Mapping(source = "id", target = "id")
     ProductResponseV2 toResponseV2(ProductOutput output);
 
     List<ProductResponseV2> toResponseV2List(List<ProductOutput> outputs);
